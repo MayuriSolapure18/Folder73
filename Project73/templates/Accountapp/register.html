@@ -1,0 +1,17 @@
+{% extends 'App1/base.html '%}
+{% load crispy_forms_tags %}
+
+
+{% block title %}
+    <title> Register </title>
+    <% endlock %>
+{% block contnt %}
+    <div class=container>
+        <h1 style="text-align: center;">Register</h1>
+          <form method="POST" class="jumbotron">
+              {% csrf_token %}
+              <input type="submit" value="Register" class="btn btn-success">
+
+          </form>
+    </div>
+    {% endblock %}
